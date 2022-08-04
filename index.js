@@ -43,10 +43,42 @@ const questions = [
             }
         }
     },
+    {
+        type: 'input',
+        name: 'projectUse',
+        message: "How do you use your project?",
+        validate: useInput => {
+            if (useInput) {
+                return true;
+            } else {
+                console.log('Please enter a use for your project')
+                return false;
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: 'github',
+        message: "Enter your github username",
+        validate: githubInput => {
+            if (githubInput) {
+                return true;
+            } else {
+                console.log('Enter a github username')
+                return false;
+            }
+        }
+    }
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) => {
+        if (err)
+            throw err;
+        console.log('file written')
+    });
+};
 
 // TODO: Create a function to initialize app
 function init() {}
