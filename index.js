@@ -6,8 +6,8 @@ const generateMarkdown = require('./utils/generateMarkdown.js')
 const questions = [
     {
         type: 'input',
-        name: 'projectTitle'
-        message: "What's the name of your project?"
+        name: 'projectName',
+        message: "What's the name of your project?",
         validate: nameInput => {
             if (nameInput) {
                 return true;
@@ -17,7 +17,32 @@ const questions = [
             }
         }
     },
-    
+    {
+        type: 'input',
+        name: 'projectDescription',
+        message: "Enter a description for your project",
+        validate: descriptionInput => {
+            if (descriptionInput) {
+                return true;
+            } else {
+                console.log('Please enter a description')
+                return false;
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: 'projectInstall',
+        message: "How do you install your project?",
+        validate: installInput => {
+            if (installInput) {
+                return true;
+            } else {
+                console.log('Please enter installation instructions')
+                return false;
+            }
+        }
+    },
 ];
 
 // TODO: Create a function to write README file
