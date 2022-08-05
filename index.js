@@ -68,6 +68,19 @@ const questions = [
                 return false;
             }
         }
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: "Enter your email",
+        validate: emailInput => {
+            if (emailInput) {
+                return true;
+            } else {
+                console.log('Enter an email')
+                return false;
+            }
+        }
     }
 ];
 
@@ -81,7 +94,13 @@ function writeToFile(fileName, data) {
 };
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer.prompt(questions)
+    .then(function (userInput) {
+        console.log(userInput)
+        writeToFile("./README.md", generateMarkdown(userInput));
+    });
+};
 
 // Function call to initialize app
 init();
