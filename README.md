@@ -1,16 +1,16 @@
-# Example name  
+# Beep  
   ## Table of Contents 
   - [Description](#description)
   - [Installation](#installation)
   - [Usage](#usage)
 
   ## Description:
-  Example description
+  Boop
   ## Installation:
-  Example installation
+  Beep
   ## Usage:
-  Example Usage
+  Boop
 
   ## Additional Info:
-  - Github: [TheTrueZK](https://github.com/TheTrueZK)
-  - Email: thetruezk@gmail.com
+  - Github: [Beep](https://github.com/Beep)
+  - Email: Boop
