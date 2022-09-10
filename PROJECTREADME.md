@@ -1,15 +1,15 @@
-# Example name  
+# Professional ReadMe Generator  
   ## Table of Contents 
   - [Description](#description)
   - [Installation](#installation)
   - [Usage](#usage)
 
   ## Description:
-  Example description
+  A readme generator using node.js
   ## Installation:
-  Example installation
+  npm i inquirer
   ## Usage:
-  Example Usage
+  node server.js
 
   ## Additional Info:
   - Github: [TheTrueZK](https://github.com/TheTrueZK)
